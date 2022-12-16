@@ -1,0 +1,1 @@
+(()=>{var e=document,a=document.createElement("img");a.crossOrigin="anonymous",a.src="https://raw.githubusercontent.com/jblandon97/Sprint-04/ea33abadb50cde70050ab3bf1609370d98c1807b/imagenes/bg-stars.svg",a.id="Very-dark-mostly-black-blue",e.body.appendChild(a)})();
