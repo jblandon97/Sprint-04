@@ -25,12 +25,12 @@ export const countdown = (id, referenceDate, message) => {
                     <div class="target"><span>${hours}</span></div>   
                     <div class="target"><span>${minutes}</span></div>   
                     <div class="target"><span>${seconds}</span></div>
-                </div>   
+                </div>     
                 <div id = "legends">
-                    <div class="legend"><span>days</span></div>
-                    <div class="legend"><span>hours</span></div>   
-                    <div class="legend"><span>minutes</span></div>   
-                    <div class="legend"><span>seconds</span></div>
+                    <div class="legend"><span>DAYS</span></div>
+                    <div class="legend"><span>HOURS</span></div>   
+                    <div class="legend"><span>MINUTES</span></div>   
+                    <div class="legend"><span>SECONDS</span></div>
                 </div>   
         `
         console.log(countdownDate, now, limitTime);
