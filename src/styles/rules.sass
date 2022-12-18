@@ -15,8 +15,8 @@ body
     
     
 footer
-    position: absolute
-    top: 100%
+    position: relative
+    // top: 100%
     border-color: $Dark-desaturated-blue
 
 footer img
@@ -24,8 +24,13 @@ footer img
 
 
 #icons
-    display: flex
-    justify-content: center
+
+    position: absolute
+    left: 50%
+    translate: -50%
+    text-align: center
+    padding-top: 5%
+    
 
 
 #icons i
@@ -69,8 +74,8 @@ footer img
     font-size: 1.5rem
     color: $Grayish-blue
     font-weight: $font-weight
-    width: 200px
-    height: 100px
+    @include target-200x200()
+    
 
 .target span 
     box-shadow: 1px 2px 2px
