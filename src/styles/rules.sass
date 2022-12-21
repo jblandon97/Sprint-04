@@ -4,6 +4,10 @@
 @import "./dimensions.sass"
 @import "./reset.sass"
 
+//breakpoints responsive design
+
+$width-Mobile: 375px
+$width-Desktop: 1440px
 
 body
     font-family: $font-family
@@ -12,8 +16,7 @@ body
     background-image: $background-body
     background-color: $Very-dark-mostly-black-blue !important
     @include wh-100v()
-    
-    
+
 footer
     position: relative
     // top: 100%
@@ -22,7 +25,6 @@ footer
 footer img
     @include w-100v()
 
-
 #icons
 
     position: absolute
@@ -30,8 +32,6 @@ footer img
     translate: -50%
     text-align: center
     padding-top: 5%
-    
-
 
 #icons i
     margin: 0 10px
@@ -39,22 +39,20 @@ footer img
 #icons i:hover
     color: $Soft-red
 
-
-#countdown h3 
+#countdown h3
     text-align: center
     color: $White
     font-weight: $font-weight
     font-size: 2rem
     letter-spacing: .5rem
     padding: 5%
-    
 
 #targets, #legends
     display: flex
     justify-content: center
     align-items: center
+    margin: 0 10%
     gap: 10px
-
 
 .target
     display: flex
@@ -75,7 +73,38 @@ footer img
     color: $Grayish-blue
     font-weight: $font-weight
     @include target-200x200()
-    
 
-.target span 
+.target span
     box-shadow: 1px 2px 2px
+
+@media only screen and (max-width: 375px)
+    #countdown h3
+        font-size: 1rem
+        letter-spacing: .25rem
+        margin: 0 auto
+
+    #targets, #legends
+        display: flex
+        flex-direction: column
+
+
+@media only screen and (max-width: 900px)
+
+    .target, .legend
+        width: 180px
+
+    .target
+        font-size: 4rem
+
+    .legend
+        font-size: 1rem
+
+    footer
+        position: absolute
+        top: 100%
+        border-color: $Dark-desaturated-blue
+
+    // #targets, #legends
+    //     flex-basis: 1
+    //     flex-grow: 2
+    //     flex-shrink: 4
